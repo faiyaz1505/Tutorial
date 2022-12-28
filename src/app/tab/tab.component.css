@@ -23,7 +23,7 @@ body{
     display: block;
 }
 .tab-wrap label{
-    /* background-color: rgb(236, 160, 17); */
+    background-color: rgb(236, 160, 17);
     display: inline-block;
     padding: 10px 65px;
     cursor: pointer;
@@ -33,19 +33,19 @@ body{
     margin: 0 10px 0 0;
 }
 .tab-wrap .tab-content{
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding: 20px;
     border-radius: 0 10px 10px 10px;
     position: absolute;
     left: 0;
-    top: 35px;
+    top: 50px;
     width: 100%;
     display: none;
 }
 .tab-wrap [id^=tab]:checked + label{ /*advance selector jis id ki starting "tab se hoti hai agar wo checked hai to uske immediate next label"  ka background color change*/
-    /* background-color: blueviolet ; */
+    background-color: blueviolet ;
     border-radius: 10px 10px 0 0;
 }
 .tab-wrap [id^=tab]:checked ~ .tab-content{ 
