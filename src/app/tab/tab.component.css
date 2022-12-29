@@ -13,6 +13,7 @@ body{
     padding: 0;
     position: relative;
     margin: 50px;
+    /* border:1px solid black; */
 }
 .tab-wrap input{
     display: none;
@@ -44,7 +45,7 @@ body{
     width: 100%;
     display: none;
 }
-.tab-wrap [id^=tab]:checked + label{ /*advance selector jis id ki starting "tab se hoti hai agar wo checked hai to uske immediate next label"  ka background color change*/
+.tab-wrap [id^=tab]:checked + label{ /*advance selector-> jis id ki starting "tab" se hoti hai agar wo checked hai to uske immediate next label"  ka background color change*/
     /* background-color: blueviolet ; */
     border-radius: 10px 10px 0 0;
 }
@@ -55,4 +56,8 @@ body{
     height: 5px;
     margin: 0 10px 0 0;
     background-color: orange;
+}
+.tab-content p{
+    text-align: justify;
+  text-justify: inter-word;
 }
