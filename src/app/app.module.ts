@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { TabComponent } from './tab/tab.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { HeaderComponent } from './header/header.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
+import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TabComponent,
     AccordionComponent,
-    HeaderComponent
+    HeaderComponent,
+    FlexboxComponent,
+    StringInterpolationComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,

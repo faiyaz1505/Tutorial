@@ -1,0 +1,28 @@
+.child1{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: blue;
+    border: 2px solid black;
+}
+.child2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: blue;
+    border: 2px solid black;
+}
+.child3{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    color: blue;
+    border: 2px solid black;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; align the content along y axis */
+    /* flex-direction: row;           align the content along x axis */
+    /* justify-content: end; move content to the right */
+    /* justify-content: center;move content to the center */
+}
