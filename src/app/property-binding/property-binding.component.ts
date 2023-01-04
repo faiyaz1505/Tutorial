@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-property-binding',
   templateUrl: './property-binding.component.html',
@@ -7,9 +8,16 @@ import { Component,OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit{
   allowNewServer=false;
-  disableBox=true;
-  count:number=0;
-  variable=false;
+  propertyBindingvariable=true;
+  eventBindingVariable="event binding works";
+  twoWayBindingVariable='edit two way binding variable value';
+
+ 
+
+  
+
+  
+
 
   constructor(){
     setInterval(()=>{
@@ -18,24 +26,45 @@ export class PropertyBindingComponent implements OnInit{
   }
 
   enableButton(){
-    this.disableBox=false;
+    this.propertyBindingvariable=false;
   }  
 
-  increaseCount(){
-    this.count+=1
-    this.disableBox=true;
-  }
-  decreaseCount(){
-    this.count-=1
-    this.disableBox=true;
-  }
-  reset(){
-    this.count=0;
-    this.disableBox=false;
+
+  eventBinding(){
+    this.eventBindingVariable='event binding stops';
   }
   
   ngOnInit(){
     
   }
+  // combination of all binding//
+  combination2WayVariable='';
+  combinationPropertyBindingVariable=false;
+  comboEventVariable='you are log out'
+  comboEvent(){
+    this.combinationPropertyBindingVariable=true;
+    this.comboEventVariable='you are login! your username is '+this.combination2WayVariable;
+  }
+
+  // Directive
+  directiveInputVariable='';
+  directiveVariable=false;
+  directive(){
+    this.directiveVariable=true;
+  }
+
+  
+  // style with ngStyle
+  styleInputVariable:any;
+  booleanVariable='offline';
+  status=false;
+  colorVariable:any;
+  buttonEvent(){
+    this.booleanVariable=this.styleInputVariable>=5?'online':'offline';
+    this.colorVariable=this.booleanVariable=='online'?'green':'red';
+    this.status=true;
+  }
+
+  
 
 }
